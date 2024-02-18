@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        border: 2px solid black;
+        width: 1000px;
+        height: 500px;
+      background-color: black;
+      margin-left: 300px;
+      margin-top: 100px;
+       } 
+       .b1:active~img{
+        transform: none;
+       }
+       .b1{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-top: 50px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b2:active~img{
+        transform: rotate(10deg);
+       }
+       .b2{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b3:active~img{
+        transform: rotate(45deg);
+       }
+       .b3{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b4:active~img{
+        transform: rotateX(45deg);
+       }
+       .b4{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b5:active~img{
+        transform: rotateX(100deg);
+       }
+       .b5{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b6:active~img{
+        transform: rotateY(45deg);
+       }
+       .b6{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b7:active~img{
+        transform: rotateY(80deg);
+       }
+       .b7{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b8:active~img{
+        transform: skew(20deg,20deg);
+       }
+       .b8{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b9:active~img{
+        transform: skew(30deg,30deg);
+       }
+       .b9{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b10:active~img{
+        transform: skewX(30deg);
+       }
+       .b10{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b11:active~img{
+        transform: skewX(40deg);
+       }
+       .b11{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b12:active~img{
+        transform: skewY(30deg);
+       }
+       .b12{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b13:active~img{
+        transform: skewY(40deg);
+       }
+       .b13{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b14:active~img{
+        transform: translate(20px,10px);
+       }
+       .b14{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b15:active~img{
+        transform: translate(20px,20px);
+       }
+       .b15{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b16:active~img{
+        transform: scale(2,2);
+       }
+       .b16{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b17:active~img{
+        transform: scale(2,3);
+       }
+       .b17{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       .b18:active~img{
+        transform: matrix(0.866, 0.7,-0.8, 0.866, 0, 0);
+       }
+       .b18{
+        border: 1px solid;
+        height: 20px;
+        width: 350px;
+        margin-left: 30px;
+        font-weight: bold;
+        background-color:darkcyan;
+       }
+       img{
+        position: absolute;
+        top: 10px;
+        margin-left: 600px;
+        font-weight: bold;
+        background-color:darkcyan;
+        margin-top: 140px;
+       }
+      
+    </style>
+</head>
+<body>
+  <div class="container">
+  <div class="b1">
+  <input type="radio" name="action">transform: none
+ </div>
+  <div class="b2">
+  <input type="radio" name="action">transform: rotate(10deg)
+ </div>
+  <div class="b3">
+  <input type="radio" name="action">transform: rotate(45deg)
+ </div>
+  <div class="b4">
+  <input type="radio" name="action">transform: rotate X(45deg)
+ </div>
+  <div class="b5">
+  <input type="radio" name="action">transform: rotate X(100deg)
+</div>
+  <div class="b6">
+  <input type="radio" name="action">transform: rotate Y(45deg)
+</div>
+  <div class="b7">
+  <input type="radio" name="action">transform: rotate Y(80deg)
+</div>
+  <div class="b8">
+  <input type="radio" name="action">transform: skew(20deg,20deg)
+</div>
+  <div class="b9">
+  <input type="radio" name="action">transform: skew(30deg,30deg)
+</div>
+  <div class="b10">
+  <input type="radio" name="action">transform: skew X(30deg)
+</div>
+  <div class="b11">
+  <input type="radio" name="action">transform: skew X(40deg)
+</div>
+  <div class="b12">
+  <input type="radio" name="action">transform: skew Y(30deg)
+</div>
+  <div class="b13">
+  <input type="radio" name="action">transform: skew Y(40deg)
+</div>
+  <div class="b14">
+  <input type="radio" name="action">transform: translate(20px,10px)
+</div>
+  <div class="b15">
+  <input type="radio" name="action">transform: translate(20px,20px)
+</div>
+  <div class="b16">
+  <input type="radio" name="action">transform: scale(2,2)
+</div>
+  <div class="b17">
+  <input type="radio" name="action">transform: scale(2,3)
+</div>
+  <div class="b18">
+  <input type="radio" name="action">transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0)
+</div>
+  <img src="./f2.jpg" height="200px" width="300">
+</body>
+</html>
